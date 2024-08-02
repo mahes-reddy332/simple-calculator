@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main1">
+            <form>
+                <div class="display">
+                    <input type="text" name="mahi" >
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="mahi.value=''" class="border">
+                    <input type="button" value="DE" onclick="mahi.value=mahi.value.toString().slice(0,-1)" class="border">
+                    <input type="button" value="." onclick="mahi.value+='.'" class="border">
+                    <input type="button" value="/" onclick="mahi.value+='/'" class="border">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="mahi.value+='7'">
+                    <input type="button" value="8" onclick="mahi.value+='8'">
+                    <input type="button" value="9" onclick="mahi.value+='9'">
+                    <input type="button" value="*" onclick="mahi.value+='*'" class="border">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="mahi.value+='4'">
+                    <input type="button" value="5" onclick="mahi.value+='5'">
+                    <input type="button" value="6" onclick="mahi.value+='6'">
+                    <input type="button" value="-" onclick="mahi.value+='-'" class="border">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="mahi.value+='1'">
+                    <input type="button" value="2" onclick="mahi.value+='2'">
+                    <input type="button" value="3" onclick="mahi.value+='3'">
+                    <input type="button" value="+" onclick="mahi.value+='+'" class="border">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="mahi.value+='00'">
+                    <input type="button" value="0" onclick="mahi.value+='0'">
+                    <input type="button" value="=" class="equal" onclick="mahi.value=eval(mahi.value)" class="border">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
